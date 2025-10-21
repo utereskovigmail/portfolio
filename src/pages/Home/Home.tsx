@@ -2,6 +2,7 @@
 
 import Hero from './Components/Hero';
 import SSection from './Components/SecondSection';
+import ProjectsOverview from './Components/ProjectsOverview';
 function Home(){
 
     return(
@@ -10,6 +11,8 @@ function Home(){
             <Hero/>
             {/*Strengths*/}
             <SSection/>
+            {/*Projects*/}
+            <ProjectsOverview/>
 
         </div>
     );
