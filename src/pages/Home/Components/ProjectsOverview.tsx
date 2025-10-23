@@ -2,6 +2,7 @@ import {motion} from "framer-motion";
 import { FaReact, FaCss3Alt, FaHtml5, FaJs, FaGithub } from "react-icons/fa";
 import {SiSharp, SiPostgresql, SiTailwindcss, SiTypescript, SiDotnet } from "react-icons/si";
 import type {JSX} from "react";
+import {Link} from "react-router-dom";
 
 
 function ProjectsOverview(){
@@ -65,13 +66,13 @@ function ProjectsOverview(){
 
 
     return (
-        <section className="w-full py-10 bg-gradient-to-b from-white to-gray-50">
+        <section className="max-w-screen-2xl py-6 mx-auto">
             <motion.div
                 key="projects-section"
                 initial={{ opacity: 0, y: 60, scale: 0.9 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="mx-auto w-full max-w-8xl px-4 sm:px-8 lg:px-12"
+                className="mx-auto w-full max-w-8xl px-4 sm:px-8"
             >
                 <div className="text-center mb-8">
                     <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-3">
@@ -127,7 +128,26 @@ function ProjectsOverview(){
                         </motion.li>
                     ))}
                 </ul>
+                <div className={"w-full flex justify-start items-center my-8"}>
+                    <Link
+                        to="/projects"
+                        className="
+                        px-6 py-3
+                        rounded-xl
+                        bg-gradient-to-br from-cyan-600 via-sky-500 to-blue-600
+                        text-white font-medium
+                        shadow-md hover:shadow-lg
+                        hover:scale-105
+                        hover:from-cyan-700 hover:to-blue-700
+                        transition-all duration-300 ease-out
+                      "
+                    >
+                        Show More
+                    </Link>
+
+                </div>
             </motion.div>
+
         </section>
 
     )

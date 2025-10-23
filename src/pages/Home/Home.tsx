@@ -3,6 +3,7 @@
 import Hero from './Components/Hero';
 import SSection from './Components/SecondSection';
 import ProjectsOverview from './Components/ProjectsOverview';
+import Skills from './Components/Skills';
 function Home(){
 
     return(
@@ -11,8 +12,14 @@ function Home(){
             <Hero/>
             {/*Strengths*/}
             <SSection/>
-            {/*Projects*/}
-            <ProjectsOverview/>
+
+            <div className={"{w-full bg-gradient-to-b from-white to-gray-50"}>
+                {/*Projects*/}
+                <ProjectsOverview/>
+                {/*Skills*/}
+                <Skills/>
+            </div>
+
 
         </div>
     );
