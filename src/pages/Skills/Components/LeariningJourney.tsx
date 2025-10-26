@@ -4,7 +4,7 @@ export default function LearningJourney() {
     return (
         <section
             id="learning-journey"
-            className="mt-8 px-6"
+            className="mt-16 px-6"
 
         >
             <motion.div

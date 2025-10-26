@@ -31,7 +31,7 @@ function Header() {
                             to="/skills"
                             className="text-gray-600 hover:text-cyan-700 px-3 py-3 text-sm font-medium transition-colors"
                         >
-                            Skills
+                            Programing Skills
                         </Link>
                     </nav>
 

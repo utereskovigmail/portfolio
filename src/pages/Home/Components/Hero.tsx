@@ -23,11 +23,11 @@ function Hero(){
                         </h1>
 
                         <p className="text-gray-600 text-base sm:text-lg">
-                            Student <span className="mx-1">·</span> Programmer <span className="mx-1">·</span> Novice Entrepreneur
+                            Student <span className="mx-1">·</span> Programmer <span className="mx-1">·</span> Student Developer
                         </p>
 
                         <p className="text-gray-700 text-base sm:text-lg">
-                            I build digital tools that connect people and bring ideas to life.
+                            Curious mind. Problem solver. Always learning.
                         </p>
 
                         <div className="flex flex-wrap items-center gap-3 pt-2">
