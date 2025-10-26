@@ -18,7 +18,7 @@ const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
-        transition: { staggerChildren: 0.05, delayChildren: 0.05 },
+        transition: { staggerChildren: 0.1, delayChildren: 0.1 },
     },
 };
 
@@ -41,7 +41,7 @@ function Skills() {
                 Skills
             </motion.h1>
 
-            <motion.div className="w-full grid grid-cols-3 gap-4 mx-auto px-4 sm:px-8"
+            <motion.div className="w-full grid grid-cols-1 ultra_sm:grid-cols-2 md:grid-cols-3 gap-4 mx-auto px-4 sm:px-8"
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"

@@ -30,7 +30,7 @@ function SecondSection(){
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 variants={container}
-                className="mx-auto max-w-screen-2xl px-6 sm:px-9 lg:px-12 py-16"
+                className="mx-auto max-w-screen-2xl px-6 sm:px-8 py-16"
             >
                 <div className="grid items-center gap-12 lg:grid-cols-2">
                     {/* Left: copy */}

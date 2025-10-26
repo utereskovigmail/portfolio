@@ -10,7 +10,7 @@ function Header() {
     }
 
     return (
-        <header className="bg-white">
+        <header className="bg-white sticky top-0 z-50 rounded rounded-b-lg border-b border-slate-100">
             <div className="max-w-screen-2xl mx-auto px-6 sm:px-9 lg:px-12">
                 <div className="flex items-center justify-between py-6">
                     {/* Left Navigation */}

@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import { techIcons } from "../../data/techIcons";
+import LearningJourney from "./Components/LeariningJourney"
 
 const techCategories: Record<string, string[]> = {
     Frontend: [
@@ -36,6 +37,7 @@ const itemVariants = {
 function Skills() {
     return (
         <section className="w-full py-12">
+
             {/* Title — slightly nicer but still minimal */}
             <motion.h1
                 initial={{ opacity: 0, y: 8 }}
@@ -83,6 +85,7 @@ function Skills() {
                     </div>
                 ))}
             </div>
+            <LearningJourney/>
         </section>
     );
 }

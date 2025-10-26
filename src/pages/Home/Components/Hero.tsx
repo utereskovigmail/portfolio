@@ -23,7 +23,7 @@ function Hero(){
                         </h1>
 
                         <p className="text-gray-600 text-base sm:text-lg">
-                            Student <span className="mx-1">·</span> Programmer <span className="mx-1">·</span> Entrepreneur
+                            Student <span className="mx-1">·</span> Programmer <span className="mx-1">·</span> Novice Entrepreneur
                         </p>
 
                         <p className="text-gray-700 text-base sm:text-lg">
@@ -32,11 +32,11 @@ function Hero(){
 
                         <div className="flex flex-wrap items-center gap-3 pt-2">
                             <Link
-                                to="/projects"
+                                to="/About"
                                 className="inline-flex items-center justify-center rounded-xl bg-cyan-700 px-6 py-3 text-white text-sm font-medium shadow-sm transition hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500/60"
                                 aria-label="View my projects"
                             >
-                                View Projects
+                                About Me
                             </Link>
 
                             <Link
