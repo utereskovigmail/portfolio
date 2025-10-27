@@ -45,13 +45,13 @@ function SecondSection(){
                     </motion.div>
 
                     {/* Right: icon cards */}
-                    <motion.ul
+                    <motion.div
                         variants={item}
                         className="grid sm:grid-cols-3 gap-4 sm:gap-6"
                         aria-label="Core strengths"
                     >
-                        <motion.li
-                            variants={item}
+                        <div
+
                             className="group rounded-2xl border border-gray-200 bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm ring-1 ring-transparent transition hover:-translate-y-0.5 hover:shadow-md hover:ring-cyan-200"
                         >
                             <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-cyan-600/10">
@@ -59,10 +59,9 @@ function SecondSection(){
                             </div>
                             <p className="text-sm font-medium text-gray-900">Creativity</p>
                             <p className="mt-1 text-xs text-gray-500">Design & storytelling</p>
-                        </motion.li>
+                        </div>
 
-                        <motion.li
-                            variants={item}
+                        <div
                             className="group rounded-2xl border border-gray-200 bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm ring-1 ring-transparent transition hover:-translate-y-0.5 hover:shadow-md hover:ring-cyan-200"
                         >
                             <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-cyan-600/10">
@@ -70,10 +69,10 @@ function SecondSection(){
                             </div>
                             <p className="text-sm font-medium text-gray-900">Logic</p>
                             <p className="mt-1 text-xs text-gray-500">Systems & structure</p>
-                        </motion.li>
+                        </div>
 
-                        <motion.li
-                            variants={item}
+                        <div
+
                             className="group rounded-2xl border border-gray-200 bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm ring-1 ring-transparent transition hover:-translate-y-0.5 hover:shadow-md hover:ring-cyan-200"
                         >
                             <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-cyan-600/10">
@@ -81,8 +80,8 @@ function SecondSection(){
                             </div>
                             <p className="text-sm font-medium text-gray-900">Impact</p>
                             <p className="mt-1 text-xs text-gray-500">Real-world outcomes</p>
-                        </motion.li>
-                    </motion.ul>
+                        </div>
+                    </motion.div>
                 </div>
             </motion.div>
         </section>
