@@ -8,7 +8,7 @@ import Home from "./pages/Home/Home";
 import Skills from "./pages/Skills/Skills";
 import Footer from './components/Footer/Footer'
 import AboutMe from './pages/AboutMe/AboutMe'
-// import HobbiesSection from './pages/Projects'
+import Projects from './pages/Projects/Projects'
 function App() {
 
 
@@ -20,7 +20,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/about" element={<AboutMe />} />
-                {/*<Route path="/projects" element={<HobbiesSection />} />*/}
+                <Route path="/projects" element={<Projects />} />
                 {/*<Route path="/blog" element={<Blog />} />*/}
                 {/*<Route path="/contact" element={<Contact />} />*/}
             </Routes>
