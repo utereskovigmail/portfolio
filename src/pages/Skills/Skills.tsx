@@ -36,7 +36,9 @@ const itemVariants = {
 
 function Skills() {
     return (
+
         <section className="w-full py-12">
+            <LearningJourney/>
 
             {/* Title — slightly nicer but still minimal */}
             <motion.h1
@@ -85,7 +87,7 @@ function Skills() {
                     </div>
                 ))}
             </div>
-            <LearningJourney/>
+
         </section>
     );
 }
