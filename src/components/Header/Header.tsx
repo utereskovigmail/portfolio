@@ -1,16 +1,31 @@
 import { Link } from "react-router-dom";
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import {useEffect, useRef} from "react";
 
 function Header() {
     const [isOpen, setIsOpen] = React.useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
 
     function MobileButtonHandleClick(){
         setIsOpen(!isOpen);
     }
 
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setIsOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     return (
-        <header className="bg-white sticky top-0 z-50 rounded rounded-b-lg border-b border-slate-100">
+        <header className="bg-white sticky top-0 z-50 rounded rounded-b-lg border-b border-slate-100" ref={dropdownRef}>
             <div className="max-w-screen-2xl mx-auto px-6 sm:px-9 lg:px-12">
                 <div className="flex items-center justify-between py-6">
                     {/* Left Navigation */}
@@ -98,7 +113,7 @@ function Header() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 60, scale: 1 }}
                         transition={{ duration: 0.4, ease: "easeOut" }}
-                        className={`lg:hidden border-t border-gray-200`}>
+                        className={`lg:hidden border-t border-gray-200 absolute top-[96px] w-full bg-white`}>
                         <div className="px-6 py-3 space-y-3">
                             <Link
                                 to="/"

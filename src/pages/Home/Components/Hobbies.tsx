@@ -97,7 +97,7 @@ function HobbiesSection() {
                             viewport={{ once: true, amount: 0.25 }}
                             className={`flex flex-col ${
                                 idx % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-                            } items-center gap-8 rounded-3xl bg-slate-50 px-8 py-8 border border-slate-200/70 ring-1 ring-transparent transition hover:-translate-y-0.5 hover:shadow-md hover:ring-cyan-200`}
+                            } items-center gap-8 rounded-3xl bg-slate-50 px-8 py-8 border border-slate-200/70 ring-1 ring-transparent [transition:box-shadow_.2s_ease,ring-color_.2s_ease,background-color_.2s_ease] hover:-translate-y-0.5 hover:shadow-md hover:ring-cyan-200`}
                         >
                             <motion.div
                                 className="w-full md:w-60 md:h-60 h-48 flex-shrink-0 overflow-hidden rounded-2xl shadow"
