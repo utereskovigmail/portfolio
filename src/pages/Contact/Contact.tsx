@@ -31,6 +31,7 @@ function Contact(){
                                 type="text"
                                 name="name"
                                 placeholder="Your name"
+                                required={true}
                                 className="w-full px-0 py-3 text-gray-900 placeholder-gray-400 bg-transparent border-0 border-b border-gray-200 focus:outline-none focus:border-cyan-700 transition-colors duration-300"
                             />
                         </div>
@@ -40,6 +41,7 @@ function Contact(){
                                 type="email"
                                 name="email"
                                 placeholder="Email address"
+                                required={true}
                                 className="w-full px-0 py-3 text-gray-900 placeholder-gray-400 bg-transparent border-0 border-b border-gray-200 focus:outline-none focus:border-cyan-700 transition-colors duration-300"
                             />
                         </div>
@@ -49,6 +51,7 @@ function Contact(){
             name="message"
             rows={4}
             placeholder="Your message"
+            required={true}
             className="w-full px-0 py-3 text-gray-900 placeholder-gray-400 bg-transparent border-0 border-b border-gray-200 focus:outline-none focus:border-cyan-700 transition-colors duration-300 resize-none"
         />
                         </div>

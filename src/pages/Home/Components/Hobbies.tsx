@@ -4,27 +4,27 @@ const hobbies = [
     {
         name: "Rubik’s Cube",
         image:
-            "/imgs/puzzles.HEIC",
+            "/imgs/hobbies/puzzlesjpeg.jpeg",
         description:
             "I've been solving Rubik’s cubes for over four years and have a large collection of different types. My average time for the standard 3×3 cube is around 15 seconds.",
     },
     {
         name: "Economics",
         image:
-            "/imgs/economics.avif",
+            "/imgs/hobbies/economics.avif",
         description:
             "I’m deeply interested in economics — both of my parents are economists, and I’ve inherited their passion for the subject. I enjoy understanding how market forces influence prices and how economic models can help predict trends in the stock market.",
     },
     {
         name: "Growing Plants",
         image:
-            "/imgs/plants.HEIC",
+            "/imgs/hobbies/plantsjpeg.jpeg",
         description:
             "I’ve always loved plants, especially growing exotic species from seeds. At home, I nurture a variety of tropical plants like mango, avocado, durian, and more.",
     },
     {
         name: "Numismatics",
-        image: "/imgs/coins.HEIC",
+        image: "/imgs/hobbies/coinsjpeg.jpeg",
         description:
             "I’m fascinated by numismatics — the study and collection of coins. I enjoy collecting and trading coins, and my collection includes numerous euro coins as well as rare pieces from the 19th and 20th centuries.",
     },
@@ -63,7 +63,7 @@ function HobbiesSection() {
                         transition={{ type: "spring", stiffness: 250, damping: 20 }}
                     >
                         <img
-                            src="/imgs/me.HEIC"
+                            src="/imgs/me/me3%202.jpeg"
                             alt="Photo of me"
                             loading="lazy"
                             className="w-full h-full object-cover object-center"

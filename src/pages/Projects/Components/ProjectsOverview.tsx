@@ -3,12 +3,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaReact, FaCss3Alt, FaHtml5, FaJs, FaGithub } from "react-icons/fa";
 import { SiSharp, SiPostgresql, SiTailwindcss, SiTypescript, SiDotnet } from "react-icons/si";
 import type { JSX } from "react";
-
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 import "lightbox2/dist/css/lightbox.min.css";
 
 function ProjectsOverview() {
     const [selected, setSelected] = useState<null | (typeof projects)[number]>(null);
+    const [open, setOpen] = useState(false);
+    const [index, setIndex] = useState(0);
 
 
     useEffect(() => {
@@ -187,7 +190,7 @@ function ProjectsOverview() {
                         onClick={() => setSelected(null)}
                     >
                         <motion.div
-                            className="relative w-full max-w-4xl rounded-2xl bg-white shadow-2xl border border-gray-100"
+                            className="relative w-full max-w-4xl rounded-2xl bg-white shadow-2xl border border-gray-100 max-h-[100%] overflow-y-auto"
                             initial={{ y: 40, scale: 0.98, opacity: 0 }}
                             animate={{ y: 0, scale: 1, opacity: 1 }}
                             exit={{ y: 20, scale: 0.98, opacity: 0 }}
@@ -251,25 +254,31 @@ function ProjectsOverview() {
                                 {selected.AdditionalPictures?.filter((src) => src && src.trim() !== "").length > 0 && (
                                     <div className="mt-8">
                                         <h3 className="text-sm font-semibold text-gray-700 mb-3">Gallery</h3>
-                                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                        <div className="flex justify-around items-center flex-wrap gap-4">
                                             {selected.AdditionalPictures.filter((src) => src && src.trim() !== "").map((src, idx) => (
-                                                <a
-                                                    key={idx}
-                                                    href={src}
-                                                    data-lightbox={`gallery-${selected.Name}`}
-                                                    data-title={`${selected.Name} — image ${idx + 1}`}
-                                                    className="block overflow-hidden rounded-xl border border-gray-200 group"
-                                                >
-                                                    <img
-                                                        src={src}
-                                                        alt={`${selected.Name} ${idx + 1}`}
-                                                        className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                                        loading="lazy"
 
-                                                    />
-                                                </a>
+                                             <div className={"w-auto flex justify-center"}>
+                                                 <img
+                                                     key={idx}
+                                                     src={src}
+                                                     alt={"Image"}
+                                                     className="w-auto h-32"
+                                                     onClick={() => {
+                                                         setIndex(idx);
+                                                         setOpen(true);
+                                                     }}
+
+                                                 />
+                                             </div>
+
                                             ))}
                                         </div>
+                                        <Lightbox
+                                            open={open}
+                                            close={() => setOpen(false)}
+                                            index={index}
+                                            slides={selected.AdditionalPictures.map((img) => ({ src: img }))}
+                                        />
                                     </div>
                                 )}
                             </div>
@@ -277,6 +286,8 @@ function ProjectsOverview() {
                     </motion.div>
                 )}
             </AnimatePresence>
+
+
         </section>
     );
 }

@@ -59,7 +59,7 @@ export default function AboutMe() {
                         transition={{ ...fadeUp.transition, delay: 0.1 }}
                     >
                         <img
-                            src="/imgs/me.HEIC"
+                            src="/imgs/me/me2%202.jpeg"
                             alt="Yurii Tereshkovych portrait"
                             className="w-72 h-72 md:w-80 md:h-80 rounded-3xl object-cover shadow-xl ring-1 ring-black/5"
                         />
@@ -138,19 +138,25 @@ export default function AboutMe() {
                     className="rounded-3xl bg-white/70 p-8 shadow-sm"
                 >
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">Beyond Studies</h3>
-                    <p className="leading-relaxed mb-4">
+                    <p className="leading-relaxed mb-2">
                         I’m interested in <strong>investing</strong>: I like exploring how the stock
                         market works and trying to buy shares — from tech companies like <em>Apple</em>
                         to businesses focused on health and sustainability such as <em>Johnson & Johnson</em>
-                        and <em>NextEra Energy</em>. I also love reading — especially fantasy, adventure,
-                        and detective stories. My favorite authors are <em>Agatha Christie</em> and
-                        <em> Edgar Allan Poe</em>. In addition, I enjoy watching thought-provoking movies
-                        like <em>Inception</em> and <em>The Matrix</em>.
+                        and <em>NextEra Energy</em>.
                     </p>
-                    <ul className="flex flex-wrap gap-2">
+                    <p className={"mb-2"}>
+                        I also love reading — especially fantasy, adventure,
+                        and detective stories. My favorite authors are <em>Agatha Christie</em> and
+                        <em> Edgar Allan Poe</em>.
+                    </p>
+                    <p className={"mb-4"}
+                                >
+                                In addition, I enjoy watching thought-provoking movies
+                                like <em>Inception</em> and <em>The Matrix</em>.
+                            </p>
+                            <ul className="flex flex-wrap gap-2">
                         {interests.map((i) => (
-                            <li
-                                key={i}
+                            <li key={i}
                                 className="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 ring-1 ring-indigo-100 text-sm hover:scale-[105%] transition"
                             >
                                 {i}

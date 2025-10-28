@@ -61,7 +61,7 @@ function Hero(){
                                 {/* <source srcSet="/imgs/me.avif" type="image/avif" />
                 <source srcSet="/imgs/me.webp" type="image/webp" /> */}
                                 <img
-                                    src="/imgs/me.HEIC" /* convert HEIC -> JPG/PNG/WebP */
+                                    src="/imgs/me/me4%202.jpeg"
                                     alt="Portrait of Yurii Tereshkovych"
                                     className="h-96 w-full object-cover"
                                 />

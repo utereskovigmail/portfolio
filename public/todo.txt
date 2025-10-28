@@ -1,5 +1,2 @@
 
-2) change photos
-6) fix about me page ul li last component
-7) home page fix
 8) correct github and project links

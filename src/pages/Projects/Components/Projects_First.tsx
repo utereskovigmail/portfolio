@@ -16,7 +16,7 @@ function ProjectsFirst() {
                         className="rounded-3xl bg-white/70 backdrop-blur p-8 shadow-md md:h-70"
                     >
                         <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-                            Intro
+                            About this page
                         </h1>
                         <div className={"flex flex-col justify-center"}>
 
@@ -36,7 +36,7 @@ function ProjectsFirst() {
                         transition={{ duration: 0.5, ease: "easeOut" }}
                     >
                         <img
-                            src="/imgs/me.HEIC"
+                            src="/imgs/me/me1%202.jpeg"
                             alt="Yurii Tereshkovych portrait"
                             className="w-70 h-70 rounded-3xl object-cover shadow-xl ring-1 ring-black/5"
                         />
