@@ -50,7 +50,7 @@ function Skills() {
                 Skills
             </motion.h1>
 
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto px-8">
                 {categories.map((category) => (
                     <div key={category} className="my-6">
                         <div className="mb-4 flex items-center gap-2">
@@ -68,7 +68,7 @@ function Skills() {
                             className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-6 sm:space-y-0 md:mt-6"
                         >
                             {techCategories[category].map((name: string, idx) => (
-                                <motion.div key={idx} variants={itemVariants}>
+                                <motion.div key={idx} variants={itemVariants} >
                                     <div className="group flex flex-col items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-gradient-to-b from-white/70 to-white/40 p-8 text-center shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:shadow-md dark:border-gray-700/60 dark:from-gray-800/70 dark:to-gray-800/40">
                                         <div className="h-10 w-10">
                                             {techIcons[name] ?? (

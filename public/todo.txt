@@ -1,9 +1,5 @@
-1) fix links in mobile menu
+
 2) change photos
-3) project page
-4) contact page
-5) fix footer links
 6) fix about me page ul li last component
 7) home page fix
 8) correct github and project links
-9) Manage email receive

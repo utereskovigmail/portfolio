@@ -1,6 +1,16 @@
 
 
 function Contact(){
+
+    // async function send(formData: {name:string; email:string; message:string}) {
+    //     const res = await fetch("https://formspree.io/f/movpeybd", {
+    //         method: "POST",
+    //         headers: { "Accept": "application/json" },
+    //         body: JSON.stringify(formData),
+    //     });
+    //     if (!res.ok) throw new Error("Submit failed");
+    //     return res.json();
+    // }
     return (
         <div>
             <div className="bg-white min-h-screen flex items-center justify-center py-12 px-6">
@@ -14,7 +24,8 @@ function Contact(){
                         </p>
                     </div>
 
-                    <form className="space-y-6">
+                    <form className="space-y-6"   action="https://formspree.io/f/movpeybd"
+                          method="POST">
                         <div>
                             <input
                                 type="text"

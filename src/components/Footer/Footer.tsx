@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 export default function Footer() {
-    const linksNames = ['Home', 'Projects', "Skills", 'About Me', 'Contact Me'];
+    const linksNames = ['Home', 'Projects', "Programing skills", 'About Me', 'Contact Me'];
     const links = ['/', '/projects', '/skills', '/about', '/contact'];
     return (
         <footer className="bg-gradient-to-br from-indigo-50 via-white to-pink-100 border-t border-gray-200">

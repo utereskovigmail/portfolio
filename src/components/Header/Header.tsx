@@ -37,17 +37,18 @@ function Header() {
                             Home
                         </Link>
                         <Link
+                            to="/about"
+                            className="text-gray-600 hover:text-cyan-700 px-3 py-3 text-sm font-medium transition-colors"
+                        >
+                            About Me
+                        </Link>
+                        <Link
                             to="/projects"
                             className="text-gray-600 hover:text-cyan-700 px-3 py-3 text-sm font-medium transition-colors"
                         >
                             Projects
                         </Link>
-                        <Link
-                            to="/skills"
-                            className="text-gray-600 hover:text-cyan-700 px-3 py-3 text-sm font-medium transition-colors"
-                        >
-                            Programing Skills
-                        </Link>
+
                     </nav>
 
                     {/* Center Logo */}
@@ -69,10 +70,10 @@ function Header() {
                     {/* Right Navigation */}
                     <nav className={`hidden lg:flex items-center space-x-9`}>
                         <Link
-                            to="/about"
+                            to="/skills"
                             className="text-gray-600 hover:text-cyan-700 px-3 py-3 text-sm font-medium transition-colors"
                         >
-                            About Me
+                            Programing Skills
                         </Link>
                         <Link
                             to="/contact"
@@ -125,25 +126,19 @@ function Header() {
                                 to="/about"
                                 className="block text-gray-600 hover:text-cyan-700 px-3 py-3 text-base font-medium"
                             >
-                                About
+                                About Me
                             </Link>
                             <Link
-                                to="/services"
+                                to="/projects"
                                 className="block text-gray-600 hover:text-cyan-700 px-3 py-3 text-base font-medium"
                             >
-                                Services
+                                Projects
                             </Link>
                             <Link
-                                to="/portfolio"
+                                to="/skills"
                                 className="block text-gray-600 hover:text-cyan-700 px-3 py-3 text-base font-medium"
                             >
-                                Portfolio
-                            </Link>
-                            <Link
-                                to="/blog"
-                                className="block text-gray-600 hover:text-cyan-700 px-3 py-3 text-base font-medium"
-                            >
-                                Blog
+                                Programing Skills
                             </Link>
                             <Link
                                 to="/contact"
