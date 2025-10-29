@@ -73,13 +73,13 @@ function ProjectsOverview() {
         {
             Name: "Coin Catalog",
             Short_description:
-                "A web platform designed to help users track coin prices, manage collections, and explore historical data.",
+                "A web platform designed to help users track coin prices, manage collections, and explore historical data. This site is still under development, but there is already an intermediate result.",
             Full_description:
-                "Coin Catalog aims to unite coin collectors by providing a simple way to organize and expand their collections. The app allows users to record prices, view historical data, and share their findings. This project combines my passion for numismatics and technology, using React for the frontend and ASP.NET with PostgreSQL for reliable data management.",
-            GitHub: "Not ready yet",
-            Link: "Not ready yet",
+                "Coin Catalog aims to unite coin collectors by providing a simple way to organize and expand their collections. The app allows users to record prices, view historical data, and share their findings. This project combines my passion for numismatics and technology, using React for the frontend and ASP.NET with PostgreSQL for reliable data management. This site is still under development, but there is already an intermediate result.",
+            GitHub: "https://github.com/utereskovigmail/ukrainian-coins-catalog",
+            Link: "",
             Date: "05.8.2025",
-            AdditionalPictures: ["", "", ""],
+            AdditionalPictures: ["/imgs/website/catalog/Screenshot 2025-10-29 at 16.05.41.png", "/imgs/website/catalog/Screenshot 2025-10-29 at 16.05.46.png", "/imgs/website/catalog/Screenshot 2025-10-29 at 16.06.02.png"],
             Technologies: [
                 "React (Vite)",
                 "TypeScript",
