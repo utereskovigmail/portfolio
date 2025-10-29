@@ -23,7 +23,7 @@ function Contact(){
             setFormData({ name: "", email: "", message: "" });
             alert("Your form was submitted successfully!");
         } else {
-            alert("Something went wrong!");f
+            alert("Something went wrong!");
             console.log("error occurred while submitting");
         }
     }
