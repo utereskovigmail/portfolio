@@ -57,7 +57,7 @@ function Header() {
                             <div className="w-12 h-12  rounded-xl flex items-center justify-center">
                                 <img
                                     className="w-12 h-12 object-cover"
-                                    src="/imgs/48540-4.png"
+                                    src="/imgs/HeaderImg.png"
                                     alt="logo"
                                 />
 
