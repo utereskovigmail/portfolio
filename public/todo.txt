@@ -1,2 +1,2 @@
 
-8) correct github and project links
+make coin catalog website
