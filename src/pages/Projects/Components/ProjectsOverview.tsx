@@ -66,7 +66,7 @@ function ProjectsOverview() {
                 "This portfolio represents both my technical journey and my creative mindset. It was developed using React and TailwindCSS, with a focus on clean design, intuitive navigation, and responsive layout. Through this project, I learned how to structure content for clarity and maintain a consistent visual identity across all components.",
             GitHub: "https://github.com/utereskovigmail/portfolio",
             Link: "https://tereshkovychyurii.netlify.app",
-            AdditionalPictures: ["public/imgs/website/portfolio/Screenshot 2025-10-29 at 10.22.48.png", "public/imgs/website/portfolio/Screenshot 2025-10-29 at 10.23.00.png", "public/imgs/website/portfolio/Screenshot 2025-10-29 at 10.23.08.png"],
+            AdditionalPictures: ["/imgs/website/portfolio/Screenshot1.png", "/imgs/website/portfolio/Screenshot2.png", "/imgs/website/portfolio/Screenshot3.png"],
             Date: "25.10.2025",
             Technologies: ["React (Vite)", "TypeScript", "TailwindCSS"],
         },

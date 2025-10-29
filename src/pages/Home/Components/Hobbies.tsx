@@ -55,7 +55,7 @@ function HobbiesSection() {
 
                     initial="hidden"
                     animate="visible"
-                    className="flex flex-col md:flex-row items-center gap-8 rounded-3xl bg-slate-50 dark:bg-slate-900/40 shadow-md mb-8 px-8 py-10 border border-slate-200/70 dark:border-slate-800/70"
+                    className="flex flex-col md:flex-row items-center gap-8 rounded-3xl bg-slate-50  shadow-md mb-8 px-8 py-10 border border-slate-200/70 "
                 >
                     <motion.div
                         className="w-48 h-48 md:w-60 md:h-60 flex-shrink-0 overflow-hidden rounded-2xl shadow"
@@ -76,7 +76,7 @@ function HobbiesSection() {
               My Hobbies
             </span>
                         </h1>
-                        <p className="text-slate-700 dark:text-slate-300 text-base leading-relaxed">
+                        <p className="text-slate-700  text-base leading-relaxed">
                             I’m not the one who studies all the time — I’m also human. I have
                             many hobbies and interests that help me stay creative, active, and
                             balanced. Whether it’s exploring new ideas, collecting coins, or
@@ -113,10 +113,10 @@ function HobbiesSection() {
                             </motion.div>
 
                             <div className="max-w-2xl text-center md:text-left space-y-3">
-                                <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                                <h2 className="text-3xl font-bold text-slate-900 ">
                                     {hobby.name}
                                 </h2>
-                                <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                                <p className="text-slate-700  leading-relaxed">
                                     {hobby.description}
                                 </p>
                             </div>

@@ -54,12 +54,12 @@ function Skills() {
                             <div className="group flex flex-col items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-gradient-to-b from-white/70 to-white/40 p-8 text-center shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:shadow-md hover:ring-1 hover:ring-cyan-200">
                                 <div className="h-10 w-10">
                                     {techIcons[category] ?? (
-                                        <div className="grid h-10 w-10 place-items-center rounded-full ring-1 ring-gray-300 dark:ring-gray-700 text-sm font-semibold">
+                                        <div className="grid h-10 w-10 place-items-center rounded-full ring-1 ring-gray-300  text-sm font-semibold">
                                             {category}
                                         </div>
                                     )}
                                 </div>
-                                <h3 className="text-lg font-semibold leading-tight text-gray-900 dark:text-gray-100">
+                                <h3 className="text-lg font-semibold leading-tight text-gray-900 ">
                                     {category}
                                 </h3>
                             </div>
