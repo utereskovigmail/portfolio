@@ -1,16 +1,32 @@
+import {useState} from "react";
 
 
 function Contact(){
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
 
-    // async function send(formData: {name:string; email:string; message:string}) {
-    //     const res = await fetch("https://formspree.io/f/movpeybd", {
-    //         method: "POST",
-    //         headers: { "Accept": "application/json" },
-    //         body: JSON.stringify(formData),
-    //     });
-    //     if (!res.ok) throw new Error("Submit failed");
-    //     return res.json();
-    // }
+
+
+    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault(); // зупиняємо стандартну поведінку форми
+
+        const res = await fetch("https://formspree.io/f/movpeybd", {
+            method: "POST",
+            headers: { "Accept": "application/json" },
+            body: JSON.stringify(formData),
+        });
+
+        if (res.ok) {
+            setFormData({ name: "", email: "", message: "" });
+            alert("Your form was submitted successfully!");
+        } else {
+            alert("Something went wrong!");f
+            console.log("error occurred while submitting");
+        }
+    }
     return (
         <div>
             <div className="bg-white min-h-screen flex items-center justify-center py-12 px-6">
@@ -24,14 +40,15 @@ function Contact(){
                         </p>
                     </div>
 
-                    <form className="space-y-6"   action="https://formspree.io/f/movpeybd"
-                          method="POST">
+                    <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <input
                                 type="text"
                                 name="name"
                                 placeholder="Your name"
-                                required={true}
+                                required
+                                value={formData.name}
+                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 className="w-full px-0 py-3 text-gray-900 placeholder-gray-400 bg-transparent border-0 border-b border-gray-200 focus:outline-none focus:border-cyan-700 transition-colors duration-300"
                             />
                         </div>
@@ -41,19 +58,23 @@ function Contact(){
                                 type="email"
                                 name="email"
                                 placeholder="Email address"
-                                required={true}
+                                required
+                                value={formData.email}
+                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                 className="w-full px-0 py-3 text-gray-900 placeholder-gray-400 bg-transparent border-0 border-b border-gray-200 focus:outline-none focus:border-cyan-700 transition-colors duration-300"
                             />
                         </div>
 
                         <div>
-        <textarea
-            name="message"
-            rows={4}
-            placeholder="Your message"
-            required={true}
-            className="w-full px-0 py-3 text-gray-900 placeholder-gray-400 bg-transparent border-0 border-b border-gray-200 focus:outline-none focus:border-cyan-700 transition-colors duration-300 resize-none"
-        />
+            <textarea
+                name="message"
+                rows={4}
+                placeholder="Your message"
+                required
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                className="w-full px-0 py-3 text-gray-900 placeholder-gray-400 bg-transparent border-0 border-b border-gray-200 focus:outline-none focus:border-cyan-700 transition-colors duration-300 resize-none"
+            />
                         </div>
 
                         <div className="pt-6">
