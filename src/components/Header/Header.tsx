@@ -138,7 +138,7 @@ function Header() {
                                 to="/skills"
                                 className="block text-gray-600 hover:text-cyan-700 px-3 py-3 text-base font-medium"
                             >
-                                Programing Skills
+                                Programming Skills
                             </Link>
                             <Link
                                 to="/contact"

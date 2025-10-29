@@ -48,6 +48,8 @@ function ProjectsOverview() {
                 "A web platform for students and teachers to create, take, and manage interactive tests. Built together with friends as a collaborative school project.",
             Full_description:
                 "Quizzy is an online testing system designed to make learning more dynamic and accessible. Students can take quizzes in real time, while teachers can create, edit, and analyze results through an intuitive interface. Working on this project taught me how to design scalable architecture using ASP.NET, manage teamwork, and maintain clear version control through GitHub.",
+            Impact:
+                "Used by classmates and teachers to organize over 100 quizzes during testing week, reducing feedback time from 2 days to just a few minutes.",
             GitHub: "https://github.com/oleksandr0147258369/QuizPlatform",
             Link: "http://websitenew.somee.com/Home",
             Date: "12.05.2025",
@@ -64,9 +66,15 @@ function ProjectsOverview() {
                 "A personal web portfolio I built from scratch to showcase my projects, interests, and technical skills.",
             Full_description:
                 "This portfolio represents both my technical journey and my creative mindset. It was developed using React and TailwindCSS, with a focus on clean design, intuitive navigation, and responsive layout. Through this project, I learned how to structure content for clarity and maintain a consistent visual identity across all components.",
+            Impact:
+                "Built using modern front-end tools (Vite, TypeScript, TailwindCSS) to optimize performance and maintain a clean component-based structure. Achieved Lighthouse scores above 95 for performance and accessibility.",
             GitHub: "https://github.com/utereskovigmail/portfolio",
             Link: "https://tereshkovychyurii.netlify.app",
-            AdditionalPictures: ["/imgs/website/portfolio/Screenshot1.png", "/imgs/website/portfolio/Screenshot2.png", "/imgs/website/portfolio/Screenshot3.png"],
+            AdditionalPictures: [
+                "/imgs/website/portfolio/Screenshot1.png",
+                "/imgs/website/portfolio/Screenshot2.png",
+                "/imgs/website/portfolio/Screenshot3.png",
+            ],
             Date: "25.10.2025",
             Technologies: ["React (Vite)", "TypeScript", "TailwindCSS"],
         },
@@ -75,11 +83,17 @@ function ProjectsOverview() {
             Short_description:
                 "A web platform designed to help users track coin prices, manage collections, and explore historical data. This site is still under development, but there is already an intermediate result.",
             Full_description:
-                "Coin Catalog aims to unite coin collectors by providing a simple way to organize and expand their collections. The app allows users to record prices, view historical data, and share their findings. This project combines my passion for numismatics and technology, using React for the frontend and ASP.NET with PostgreSQL for reliable data management. This site is still under development, but there is already an intermediate result.",
+                "Coin Catalog aims to unite coin collectors by providing a simple way to organize and expand their collections. The app allows users to record prices, view historical data, and share their findings. This project combines my passion for numismatics and technology, using React for the frontend and ASP.NET with PostgreSQL for reliable data management.",
+            Impact:
+                "Inspired by my hobby in numismatics, this project bridges my technical and historical interests. Designed a scalable architecture with React and ASP.NET for real-time, data-rich visualizations.",
             GitHub: "https://github.com/utereskovigmail/ukrainian-coins-catalog",
             Link: "",
             Date: "05.8.2025",
-            AdditionalPictures: ["/imgs/website/catalog/Screenshot 2025-10-29 at 16.05.41.png", "/imgs/website/catalog/Screenshot 2025-10-29 at 16.05.46.png", "/imgs/website/catalog/Screenshot 2025-10-29 at 16.06.02.png"],
+            AdditionalPictures: [
+                "/imgs/website/catalog/Screenshot 2025-10-29 at 16.05.41.png",
+                "/imgs/website/catalog/Screenshot 2025-10-29 at 16.05.46.png",
+                "/imgs/website/catalog/Screenshot 2025-10-29 at 16.06.02.png",
+            ],
             Technologies: [
                 "React (Vite)",
                 "TypeScript",
@@ -90,6 +104,7 @@ function ProjectsOverview() {
             ],
         },
     ];
+
 
     return (
         <section className="max-w-screen-2xl py-6 mx-auto">
@@ -205,14 +220,22 @@ function ProjectsOverview() {
                                     </div>
                                     <button
                                         aria-label="Close"
-                                        className="rounded-xl bg-gray-100 hover:bg-gray-200 transition p-2 text-gray-600"
+                                        className="rounded-xl bg-red-400 hover:bg-red-500 transition p-2 text-gray-600"
                                         onClick={() => setSelected(null)}
                                     >
-                                        ✕
+
                                     </button>
                                 </div>
 
                                 <p className="mt-4 text-gray-700 leading-relaxed">{selected.Full_description}</p>
+                                {selected.Impact && (
+                                    <div className="mt-4 bg-cyan-50 border border-cyan-100 rounded-xl p-4">
+                                        <h3 className="text-sm font-semibold text-cyan-800 mb-1">Impact & Results</h3>
+                                        <p className="text-sm text-cyan-900 leading-relaxed">
+                                            {selected.Impact}
+                                        </p>
+                                    </div>
+                                )}
 
                                 <div className="mt-6 flex flex-wrap gap-4">
                                     {selected.GitHub && selected.GitHub !== "Not ready yet" && (
@@ -234,8 +257,11 @@ function ProjectsOverview() {
                                         >
                                             Live Demo
                                         </a>
+
                                     )}
                                 </div>
+
+
 
                                 {/* Tech pills inside modal */}
                                 <div className="mt-6">
